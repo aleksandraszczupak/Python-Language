@@ -7,7 +7,7 @@ class Poly:
 
     def __init__(self, *coeffs):
         '''Constructor. A polynomial is initialized:
-        p = Polynomial(a_0, a_1, ..., a_n).'''
+        p = Poly(a_0, a_1, ..., a_n).'''
         coeffs = list(coeffs)
         while coeffs[-1] == 0 and len(coeffs) > 1:
             coeffs.pop()
