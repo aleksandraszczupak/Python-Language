@@ -10,7 +10,8 @@ class Frac:
             return Frac.gcd(n, m%n)    
 
     def __init__(self, x=0, y=1):
-        '''Constructor.'''
+        '''Constructor. A fraction is initialized:
+        f = Frac(x, y).'''
         gcd = Frac.gcd(abs(x), abs(y))
         self.x = x // gcd
         self.y = y // gcd
