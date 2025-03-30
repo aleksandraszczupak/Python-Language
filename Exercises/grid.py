@@ -25,7 +25,7 @@ print(grid)
 
 # solution 3
 print()
-row1 = '---'.join('+' * (cols+1)) + '\n'
-row2 = '   '.join('|' * (cols+1)) + '\n'
-grid = row2.join([row1] * (rows+1))
+aline = '---'.join('+' * (cols+1)) + '\n'
+bline = '   '.join('|' * (cols+1)) + '\n'
+grid = bline.join([aline] * (rows+1))
 print(grid)
